@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Unidos contra el dengue</title>
+<style>
+:root{--bg:#f4faf6;--card:#fff;--tx:#17302a;--mu:#52695f;--pri:#0f8a5f;--pri2:#e6f5ee;--warn:#c0392b;--warn2:#fdecea;--bd:#d5e6dc;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1c18;--card:#17271f;--tx:#e8f3ed;--mu:#9bb5a8;--pri:#3ecf94;--pri2:#1c3329;--warn:#ff7b6b;--warn2:#3a1f1c;--bd:#2a4338}}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:0 16px 40px}
+header{text-align:center;padding:28px 0 12px}
+header .big{font-size:56px}
+h1{font-size:28px;margin:6px 0;line-height:1.2}
+header p{color:var(--mu);margin:0}
+nav{display:flex;gap:8px;overflow-x:auto;padding:12px 0;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5}
+nav a{white-space:nowrap;padding:8px 14px;border-radius:99px;background:var(--pri2);color:var(--pri);text-decoration:none;font-weight:600;font-size:14px}
+section{margin-top:26px}
+h2{font-size:21px;margin:0 0 10px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:14px 16px;margin-bottom:10px}
+.card h3{margin:0 0 4px;font-size:16px}
+.card p,.card ul{margin:0;color:var(--mu);font-size:15px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.alert{background:var(--warn2);border:1px solid var(--warn);border-radius:16px;padding:14px 16px}
+.alert h3{color:var(--warn);margin:0 0 6px}
+.alert ul{margin:0;padding-left:20px}
+button{font:inherit;cursor:pointer}
+.btn{background:var(--pri);color:#fff;border:0;border-radius:12px;padding:12px 20px;font-weight:700}
+.btn:active{transform:scale(.97)}
+.hud{display:flex;justify-content:space-between;font-weight:700;margin-bottom:10px}
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.tile{aspect-ratio:1;font-size:34px;background:var(--pri2);border:2px solid var(--bd);border-radius:14px;display:flex;align-items:center;justify-content:center}
+.tile.ok{background:var(--pri);border-color:var(--pri);opacity:.55}
+.tile.bad{animation:sh .3s;border-color:var(--warn);background:var(--warn2)}
+@keyframes sh{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.opts button{padding:12px;border-radius:12px;border:2px solid var(--bd);background:var(--card);color:var(--tx);font-weight:700}
+.fb{margin-top:10px;padding:10px 12px;border-radius:12px;font-size:15px}
+.fb.g{background:var(--pri2)}.fb.r{background:var(--warn2)}
+.center{text-align:center}
+footer{margin-top:30px;text-align:center;color:var(--mu);font-size:13px}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div class="big">🦟</div>
+<h1>Unidos contra el dengue</h1>
+<p>Informarnos y actuar a tiempo salva vidas</p>
+</header>
+<nav><a href="#que">¿Qué es?</a><a href="#sintomas">Síntomas</a><a href="#prevenir">Prevención</a><a href="#juego1">Juego 1</a><a href="#juego2">Juego 2</a></nav>
+
+<section id="que">
+<h2>¿Qué es el dengue?</h2>
+<div class="card"><p>Es una enfermedad viral que transmite la hembra del mosquito <b>Aedes aegypti</b> al picar a una persona. <b>No se contagia de persona a persona.</b> Este mosquito vive cerca de las casas, pica sobre todo de día (mañana y atardecer) y deposita sus huevos en agua limpia estancada.</p></div>
+<div class="card"><h3>🔄 Del huevo al mosquito en ~7–10 días</h3><p>Huevo → larva → pupa → adulto. Por eso, vaciar y limpiar los recipientes con agua cada semana corta el ciclo.</p></div>
+</section>
+
+<section id="sintomas">
+<h2>Síntomas frecuentes</h2>
+<div class="grid">
+<div class="card"><h3>🌡️ Fiebre alta</h3><p>De inicio repentino</p></div>
+<div class="card"><h3>🤕 Dolor de cabeza</h3><p>Y detrás de los ojos</p></div>
+<div class="card"><h3>💪 Dolores</h3><p>Musculares y de articulaciones</p></div>
+<div class="card"><h3>🤢 Náuseas</h3><p>Y malestar, a veces sarpullido</p></div>
+</div>
+<div class="alert" style="margin-top:6px">
+<h3>🚨 Signos de alarma: ve de inmediato a un centro de salud</h3>
+<ul><li>Dolor abdominal fuerte y continuo</li><li>Vómitos persistentes</li><li>Sangrado de nariz o encías</li><li>Mucho sueño, irritabilidad o decaimiento</li><li>Dificultad para respirar</li><li>Piel fría y pegajosa</li></ul>
+<p style="margin:8px 0 0;font-size:14px"><b>Ojo:</b> los signos de alarma suelen aparecer cuando la fiebre baja. Si sospechas dengue: reposo, mucho líquido y consulta médica. <b>No tomes aspirina ni ibuprofeno</b>; no te automediques.</p>
+</div>
+</section>
+
+<section id="prevenir">
+<h2>¿Cómo prevenirlo?</h2>
+<div class="card"><h3>🪣 Elimina los criaderos</h3><p>Voltea, tapa o vacía baldes, llantas, latas, botellas y macetas con agua.</p></div>
+<div class="card"><h3>🔁 Cambia el agua cada 3 días</h3><p>Floreros, bebederos de mascotas y platos de macetas. Frota las paredes para quitar los huevos.</p></div>
+<div class="card"><h3>🛢️ Tapa los tanques</h3><p>Los depósitos de agua deben estar siempre bien cerrados.</p></div>
+<div class="card"><h3>🧴 Protégete</h3><p>Usa repelente, ropa de manga larga y mosquiteros en ventanas y camas.</p></div>
+<div class="card"><h3>🤝 Hazlo en comunidad</h3><p>Un solo patio descuidado puede afectar a todo el barrio. Invita a tus vecinos.</p></div>
+</section>
+
+<section id="juego1">
+<h2>🎮 Juego 1: Caza criaderos</h2>
+<div class="card">
+<p style="margin-bottom:10px">Toca solo los objetos que pueden acumular agua y criar mosquitos. ¡Los demás no! Tienes 30 segundos.</p>
+<div class="hud"><span>⏱️ <span id="t">30</span>s</span><span>⭐ <span id="s">0</span></span></div>
+<div class="board" id="board"></div>
+<div class="center" style="margin-top:12px"><button class="btn" id="go">Empezar</button></div>
+<div class="fb g" id="res" style="display:none"></div>
+</div>
+</section>
+
+<section id="juego2">
+<h2>🎮 Juego 2: ¿Mito o verdad?</h2>
+<div class="card" id="quiz"></div>
+</section>
+
+<footer>Esta página es informativa y no reemplaza la consulta médica.<br>Ante la duda, acude a tu centro de salud.</footer>
+</main>
+
+<script>
+(function(){
+var C=["🪣","🛞","💐","🥫","🍾","🛢️","🏺","🥤"];
+var N=["🚲","⚽","🌳","🪑","🧸","👟","📦","🎒"];
+var board=document.getElementById("board"),tEl=document.getElementById("t"),sEl=document.getElementById("s"),res=document.getElementById("res"),go=document.getElementById("go");
+var score,left,timer,run=false,total;
+function sh(a){return a.sort(function(){return Math.random()-.5})}
+function deal(){
+  var items=sh(C.slice()).slice(0,6).map(function(e){return {e:e,c:1}}).concat(sh(N.slice()).slice(0,6).map(function(e){return {e:e,c:0}}));
+  sh(items);total=6;left=6;board.innerHTML="";
+  items.forEach(function(it){
+    var b=document.createElement("button");b.className="tile";b.textContent=it.e;
+    b.onclick=function(){
+      if(!run||b.classList.contains("ok"))return;
+      if(it.c){b.classList.add("ok");b.textContent="✅";score+=10;left--;if(!left)end(true)}
+      else{b.classList.remove("bad");void b.offsetWidth;b.classList.add("bad");score=Math.max(0,score-5)}
+      sEl.textContent=score;
+    };
+    board.appendChild(b);
+  });
+}
+function end(win){
+  run=false;clearInterval(timer);go.textContent="Jugar otra vez";go.style.display="";
+  var bonus=win?tEl.textContent*2:0;score+=bonus;sEl.textContent=score;
+  res.style.display="block";
+  res.textContent=win?"¡Excelente! Eliminaste todos los criaderos con "+tEl.textContent+" s de sobra (bonus +"+bonus+"). Puntaje: "+score+".":"Se acabó el tiempo. Eliminaste "+(total-left)+" de "+total+" criaderos. Puntaje: "+score+". ¡Inténtalo de nuevo!";
+}
+go.onclick=function(){
+  score=0;sEl.textContent=0;tEl.textContent=30;res.style.display="none";go.style.display="none";
+  deal();run=true;
+  timer=setInterval(function(){var v=+tEl.textContent-1;tEl.textContent=v;if(v<=0)end(false)},1000);
+};
+deal();
+
+var Q=[
+["El mosquito del dengue pica sobre todo de día.",true,"Cierto: el Aedes aegypti pica sobre todo en la mañana y al atardecer."],
+["El mosquito prefiere criarse en agua sucia de alcantarillas.",false,"Mito: prefiere agua limpia y estancada en recipientes como baldes, floreros y llantas."],
+["Si tengo dengue, puedo tomar aspirina o ibuprofeno.",false,"Mito: pueden aumentar el riesgo de sangrado. Consulta siempre a un médico."],
+["Cuando baja la fiebre, el peligro ya pasó.",false,"Mito: justo entonces pueden aparecer los signos de alarma. Mantente atento."],
+["El dengue se contagia por abrazar o besar a una persona enferma.",false,"Mito: solo se transmite por la picadura de un mosquito infectado."],
+["Eliminar criaderos es más importante que solo fumigar.",true,"Cierto: sin quitar el agua estancada, los mosquitos vuelven a criarse."]
+];
+var qi=0,pts=0,qEl=document.getElementById("quiz");
+function show(){
+  if(qi>=Q.length){
+    var msg=pts>=5?"¡Eres un experto en prevención! 🏆":pts>=3?"¡Bien! Repasa un poco más. 👍":"Vuelve a leer la información y prueba otra vez. 📚";
+    qEl.innerHTML='<div class="center"><div style="font-size:44px">🎉</div><h3>Aciertos: '+pts+' de '+Q.length+'</h3><p>'+msg+'</p><p style="margin:10px 0">Comparte esta página con tu familia y vecinos.</p><button class="btn" id="rq">Jugar de nuevo</button></div>';
+    document.getElementById("rq").onclick=function(){qi=0;pts=0;show()};
+    return;
+  }
+  qEl.innerHTML='<p style="margin:0 0 6px">Pregunta '+(qi+1)+' de '+Q.length+'</p><h3 style="font-size:18px;color:var(--tx)">'+Q[qi][0]+'</h3><div class="opts"><button data-v="1">✅ Verdad</button><button data-v="0">❌ Mito</button></div><div id="fbx"></div>';
+  qEl.querySelectorAll(".opts button").forEach(function(b){
+    b.onclick=function(){
+      var ok=(b.dataset.v==="1")===Q[qi][1];if(ok)pts++;
+      qEl.querySelectorAll(".opts button").forEach(function(x){x.disabled=true});
+      document.getElementById("fbx").innerHTML='<div class="fb '+(ok?"g":"r")+'"><b>'+(ok?"¡Correcto! ":"Casi. ")+'</b>'+Q[qi][2]+'</div><div class="center" style="margin-top:10px"><button class="btn" id="nx">Siguiente</button></div>';
+      document.getElementById("nx").onclick=function(){qi++;show()};
+    };
+  });
+}
+show();
+})();
+</script>
+</body>
+</html>
